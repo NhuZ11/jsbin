@@ -1,0 +1,35 @@
+.no-underline{
+  text-decoration: none;
+  
+}
+
+.top-style{
+  background-color: #ECF2FA;
+}
+
+
+/* for navbar button */
+.no-background {
+  background-color: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  color: inherit; /* Ensure the text color stays consistent */
+}
+
+.no-background:focus, .no-background:hover {
+  background-color: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  color: inherit;
+}
+
+.align{
+  padding-top: 14px;
+}
+
+.button-back{
+  background-color: #ffeb3b;
+  padding: 6px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
