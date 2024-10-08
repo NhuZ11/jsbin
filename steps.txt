@@ -1,0 +1,4 @@
+1. simply created front end which includes header section and mid navbar
+2. created a route for app with react-router-dom
+3. for code editor we will use npm i codemirror react-codemirror2 , it is npm package which is code editor component for web.
+4.
