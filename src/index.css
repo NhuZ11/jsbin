@@ -33,3 +33,49 @@
   border-radius: 4px;
   cursor: pointer;
 }
+
+
+
+/* for home */
+
+.toggle-buttons {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #6200ea;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #3700b3;
+}
+
+.pane-container {
+  display: flex;
+  width: 800px; /* Set a fixed width */
+  
+ 
+}
+
+.editor-pane {
+ 
+  display: flex;
+  flex-direction: row;
+  gap: 1px;
+}
+
+.preview-pane {
+  flex: 1;
+  border-left: 1px solid #ccc;
+}
+
+.CodeMirror {
+  height: 100%;
+}

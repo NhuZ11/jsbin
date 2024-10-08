@@ -1,7 +1,6 @@
 import React from "react";
-import { Link } from "react-router-dom";
 
-const Navbar = () => {
+const Navbar = ({ togglePanel, panels }) => {
   return (
     <div className="container-fluid">
       <div className="row border py-2">
@@ -41,21 +40,21 @@ const Navbar = () => {
 
         {/* Center Section */}
         <div className="col d-flex justify-content-center align-items-center gap-3">
-          <div className="btn-group border " role="group" aria-label="Basic example">
-            <button type="button" className="btn ">
-              HTML
+          <div className="btn-group border" role="group" aria-label="Basic example">
+            <button type="button" className="btn" onClick={() => togglePanel('html')}>
+              {panels.html ? 'Hide HTML' : 'Show HTML'}
             </button>
-            <button type="button" className="btn ">
-              CSS
+            <button type="button" className="btn" onClick={() => togglePanel('css')}>
+              {panels.css ? 'Hide CSS' : 'Show CSS'}
             </button>
-            <button type="button" className="btn ">
-              JavaScript
+            <button type="button" className="btn" onClick={() => togglePanel('js')}>
+              {panels.js ? 'Hide JS' : 'Show JS'}
             </button>
-            <button type="button" className="btn ">
-              Console
+            <button type="button" className="btn" onClick={() => togglePanel('console')}>
+              {panels.console ? 'Hide Console' : 'Show Console'}
             </button>
-            <button type="button" className="btn ">
-              Output
+            <button type="button" className="btn" onClick={() => togglePanel('output')}>
+              {panels.output ? 'Hide Output' : 'Show Output'}
             </button>
           </div>
         </div>
