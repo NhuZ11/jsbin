@@ -41,40 +41,44 @@ const Home = () => {
 
   return (
     <>
-      <div>
-        <TopSection />
-        <Navbar togglePanel={togglePanel} panels={panels} />
-      </div>
-      <div>
-        <div className="pane-container">
-          <div className="editor-pane">
-            {panels.html && (
+      <TopSection />
+      <Navbar togglePanel={togglePanel} panels={panels} />
+      <div className="pane-container">
+        <div className="editor-pane">
+          {panels.html && (
+            <div className='box'>
               <Editor language="htmlmixed" value={html} onChange={setHtml} />
-            )}
-            {panels.css && (
+            </div>
+          )}
+          {panels.css && (
+            <div className="box">
               <Editor language="css" value={css} onChange={setCss} />
-            )}
-            {panels.js && (
+            </div>
+          )}
+          {panels.js && (
+            <div className="box">
               <Editor language="javascript" value={js} onChange={setJs} />
-            )}
-            {panels.console && (
-              <div>
-                <h4>Console Output</h4>
-                {/* Implement your console output logic here */}
-                <pre>{/* Console output goes here */}</pre>
-              </div>
-            )}
-            {panels.output && (
+            </div>
+          )}
+          {panels.console && (
+            <div className='box'>
+              <h4>Console Output</h4>
+              {/* Implement your console output logic here */}
+              <pre>{/* Console output goes here */}</pre>
+            </div>
+          )}
+          {panels.output && (
+           <div className="box">
               <iframe
-                srcDoc={srcDoc}
-                title="output"
-                sandbox="allow-scripts"
-                frameBorder="0"
-                width="100%"
-                height="100%"
-              />
-            )}
-          </div>
+              srcDoc={srcDoc}
+              title="output"
+              sandbox="allow-scripts"
+              frameBorder="0"
+              width="100%"
+              height="100%"
+            />
+           </div>
+          )}
         </div>
       </div>
     </>

@@ -67,7 +67,7 @@ button:hover {
 .editor-pane {
  
   display: flex;
-  flex-direction: row;
+  
   gap: 1px;
 }
 
@@ -78,4 +78,7 @@ button:hover {
 
 .CodeMirror {
   height: 100%;
+}
+.box{
+  width: 600px;
 }

@@ -1,31 +1,55 @@
 {
-  "hash": "81891cc4",
+  "hash": "fb43b198",
   "configHash": "47a2e87c",
-  "lockfileHash": "73f294ed",
-  "browserHash": "0e645e60",
+  "lockfileHash": "e7485dae",
+  "browserHash": "6b900e2a",
   "optimized": {
     "react": {
       "src": "../../node_modules/react/index.js",
       "file": "react.js",
-      "fileHash": "4ae18faa",
+      "fileHash": "1e95d9aa",
       "needsInterop": true
     },
     "react-dom/client": {
       "src": "../../node_modules/react-dom/client.js",
       "file": "react-dom_client.js",
-      "fileHash": "23228a58",
+      "fileHash": "e7e4282b",
       "needsInterop": true
     },
     "react-router-dom": {
       "src": "../../node_modules/react-router-dom/dist/index.js",
       "file": "react-router-dom.js",
-      "fileHash": "e24489ce",
+      "fileHash": "f012960a",
       "needsInterop": false
     },
     "bootstrap/dist/js/bootstrap.bundle.min.js": {
       "src": "../../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js",
       "file": "bootstrap_dist_js_bootstrap__bundle__min__js.js",
-      "fileHash": "a508d57d",
+      "fileHash": "92ccb7a6",
+      "needsInterop": true
+    },
+    "react-codemirror2": {
+      "src": "../../node_modules/react-codemirror2/index.js",
+      "file": "react-codemirror2.js",
+      "fileHash": "dadc2892",
+      "needsInterop": true
+    },
+    "codemirror/mode/javascript/javascript": {
+      "src": "../../node_modules/codemirror/mode/javascript/javascript.js",
+      "file": "codemirror_mode_javascript_javascript.js",
+      "fileHash": "c058a1b6",
+      "needsInterop": true
+    },
+    "codemirror/mode/htmlmixed/htmlmixed": {
+      "src": "../../node_modules/codemirror/mode/htmlmixed/htmlmixed.js",
+      "file": "codemirror_mode_htmlmixed_htmlmixed.js",
+      "fileHash": "517bbe06",
+      "needsInterop": true
+    },
+    "codemirror/mode/css/css": {
+      "src": "../../node_modules/codemirror/mode/css/css.js",
+      "file": "codemirror_mode_css_css.js",
+      "fileHash": "a2dddbac",
       "needsInterop": true
     }
   },
@@ -35,6 +59,15 @@
     },
     "chunk-WNPTCGAH": {
       "file": "chunk-WNPTCGAH.js"
+    },
+    "chunk-DSA66KW3": {
+      "file": "chunk-DSA66KW3.js"
+    },
+    "chunk-FJM55UMJ": {
+      "file": "chunk-FJM55UMJ.js"
+    },
+    "chunk-EYVSH67K": {
+      "file": "chunk-EYVSH67K.js"
     },
     "chunk-5WRI5ZAA": {
       "file": "chunk-5WRI5ZAA.js"
