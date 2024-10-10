@@ -43,7 +43,7 @@ const Home = () => {
     <>
       <TopSection />
       <Navbar togglePanel={togglePanel} panels={panels} />
-      <div className="pane-container">
+      <div className="pane-container">   
         <div className="editor-pane">
           {panels.html && (
             <div className='box'>
@@ -79,6 +79,55 @@ const Home = () => {
             />
            </div>
           )}
+        </div>
+      </div>
+
+      <div className="container-fluid">
+        <div className="row">
+          <div className="col-md-3">
+          {panels.html && (
+            <div className='box'>
+              <Editor language="htmlmixed" value={html} onChange={setHtml} />
+            </div>
+          )}
+          </div>
+          <div className="col-md-2">
+          {panels.css && (
+            <div className="box">
+              <Editor language="css" value={css} onChange={setCss} />
+            </div>
+          )}
+          </div>
+          <div className="col-md-2">
+          {panels.js && (
+            <div className="box">
+              <Editor language="javascript" value={js} onChange={setJs} />
+            </div>
+          )}
+          </div>
+          <div className="col-md-2">
+          {panels.console && (
+            <div className='box'>
+              <h4>Console Output</h4>
+              {/* Implement your console output logic here */}
+              <pre>{/* Console output goes here */}</pre>
+            </div>
+          )}
+          </div>
+          <div className="col-md-2">
+          {panels.output && (
+           <div className="box">
+              <iframe
+              srcDoc={srcDoc}
+              title="output"
+              sandbox="allow-scripts"
+              frameBorder="0"
+              width="100%"
+              height="100%"
+            />
+           </div>
+          )}
+          </div>
         </div>
       </div>
     </>

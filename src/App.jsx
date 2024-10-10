@@ -6,6 +6,7 @@ import { BrowserRouter as Router, Route, Link, Routes } from "react-router-dom";
 import Home from './Components/Home'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
+import Test from './Components/Test';
 
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
      <Router>
        <Routes>
          <Route path='/' element={<Home />} /> 
+         <Route path='/test' element={<Test />} /> 
        </Routes>
      </Router>
 
