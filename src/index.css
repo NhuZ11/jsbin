@@ -58,17 +58,22 @@ button:hover {
 }
 
 .pane-container {
-  display: flex;
-  width: 800px; /* Set a fixed width */
-  
- 
+  padding: 10px;
 }
 
 .editor-pane {
- 
   display: flex;
-  
-  gap: 1px;
+  gap: 2px; /* Spacing between panels */
+  width: 100%;
+}
+
+.box {
+  flex-grow: 1;
+  height: 100%;
+  border-left: 1px solid #ddd;
+  padding: 10px;
+  overflow: auto;
+  box-sizing: border-box;
 }
 
 .preview-pane {
@@ -77,7 +82,8 @@ button:hover {
 }
 
 .CodeMirror {
-  height: 100%;
+  padding-top: 0;
+  margin-top: 0;
 }
 .box{
   width: 600px;
