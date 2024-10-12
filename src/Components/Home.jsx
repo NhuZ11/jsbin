@@ -1,14 +1,16 @@
-import React, { useState, useEffect } from 'react';
-import TopSection from './TopSection';
-import Navbar from './Navbar';
-import Editor from './Editor';
-import HtmlEditor from './htmlEditor';
+import React, { useState, useEffect } from "react";
+import TopSection from "./TopSection";
+import Navbar from "./Navbar";
+import Editor from "./Editor";
+import HtmlEditor from "./htmlEditor";
+import CssEditor from "./CssEditor";
+import JsEditor from "./JsEditor";
 
 const Home = () => {
-  const [html, setHtml] = useState('');
-  const [css, setCss] = useState('');
-  const [js, setJs] = useState('');
-  const [srcDoc, setSrcDoc] = useState('');
+  const [html, setHtml] = useState("");
+  const [css, setCss] = useState("");
+  const [js, setJs] = useState("");
+  const [srcDoc, setSrcDoc] = useState("");
 
   // State to manage visibility of each panel
   const [panels, setPanels] = useState({
@@ -51,23 +53,19 @@ const Home = () => {
         <div
           className="editor-pane"
           style={{
-            display: 'flex',
-            gap: '4px',
+            display: "flex",
+            gap: "4px",
             gridTemplateColumns: `repeat(${activePanelsCount}, 1fr)`,
           }}
         >
           {panels.html && (
-           <HtmlEditor language="htmlmixed" value={html} onChange={setHtml}/>
+            <HtmlEditor language="htmlmixed" value={html} onChange={setHtml} />
           )}
           {panels.css && (
-            <div className="box">
-              <Editor language="css" value={css} onChange={setCss} />
-            </div>
+            <CssEditor language="css" value={css} onChange={setCss} />
           )}
           {panels.js && (
-            <div className="box">
-              <Editor language="javascript" value={js} onChange={setJs} />
-            </div>
+            <JsEditor language="javascript" value={js} onChange={setJs} />
           )}
           {panels.console && (
             <div className="box">
@@ -76,7 +74,14 @@ const Home = () => {
             </div>
           )}
           {panels.output && (
-            <div className="box">
+            <div className="box" style={{fontSize: 14}}>
+              <div className="d-flex">
+                <p className="p-2">Output</p>
+                <p className="btn p-0 ms-4  border">Run with JS</p>
+                <p className="ms-2">
+                  Auto run-JS <input type="checkbox" />
+                </p>
+              </div>
               <iframe
                 srcDoc={srcDoc}
                 title="output"

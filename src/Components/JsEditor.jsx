@@ -1,8 +1,8 @@
-import React from "react";
+import React from 'react'
 import Editor from "./Editor";
-import "codemirror/mode/css/css";
+import 'codemirror/mode/javascript/javascript';
 
-const CssEditor = (props) => {
+const JsEditor = (props) => {
   return (
     <div className="box">
       <div className="dropdown">
@@ -13,7 +13,7 @@ const CssEditor = (props) => {
           data-bs-toggle="dropdown"
           aria-expanded="false"
         >
-          CSS
+          JavaScript
         </button>
         <ul className="dropdown-menu" aria-labelledby="dropdownMenuButton">
           <li>
@@ -39,7 +39,7 @@ const CssEditor = (props) => {
         onChange={props.onChange}
       />
     </div>
-  );
-};
+  )
+}
 
-export default CssEditor;
+export default JsEditor

@@ -7,7 +7,7 @@ const HtmlEditor = (props) => {
       <div className="box">
         <div className="dropdown">
           <button
-            className="btn dropdown-toggle no-background"
+            className="btn dropdown-toggle no-background text-primary"
             type="button"
             id="dropdownMenuButton"
             data-bs-toggle="dropdown"
