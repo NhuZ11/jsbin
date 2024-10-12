@@ -71,7 +71,7 @@ button:hover {
   flex-grow: 1;
   height: 100%;
   border-left: 1px solid #ddd;
-  padding: 10px;
+
   overflow: auto;
   box-sizing: border-box;
 }

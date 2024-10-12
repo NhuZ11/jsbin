@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import TopSection from './TopSection';
 import Navbar from './Navbar';
 import Editor from './Editor';
+import HtmlEditor from './htmlEditor';
 
 const Home = () => {
   const [html, setHtml] = useState('');
@@ -56,9 +57,7 @@ const Home = () => {
           }}
         >
           {panels.html && (
-            <div className="box">
-              <Editor language="htmlmixed" value={html} onChange={setHtml} />
-            </div>
+           <HtmlEditor language="htmlmixed" value={html} onChange={setHtml}/>
           )}
           {panels.css && (
             <div className="box">

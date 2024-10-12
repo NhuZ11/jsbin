@@ -1,28 +1,40 @@
-import React from "react";
-import 'codemirror/lib/codemirror.css'
-import 'codemirror/theme/material.css'
-import 'codemirror/mode/xml/xml' 
-import { Controlled as ControlledEditor } from "react-codemirror2";
+import React ,{useState, useEffect} from "react";
+import Editor from "./Editor";
+import 'codemirror/mode/htmlmixed/htmlmixed';
 
-const HtmlEditor = () => {
+const HtmlEditor = (props) => {
   return (
-    <div className="editor-container">
-        <div className="editor-title">
-            <p>HTML</p>
-            <ControlledEditor 
-            
-            
-            className="code-mirror-wrapper"
-            options={{
-                lineWrapping: true,
-                lint: true,
-                mode: XMLDocument,
-                lineNumbers: true
-            }}
-            />
+      <div className="box">
+        <div className="dropdown">
+          <button
+            className="btn dropdown-toggle no-background"
+            type="button"
+            id="dropdownMenuButton"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            HTML
+          </button>
+          <ul className="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <li>
+              <a className="dropdown-item" href="#">
+                Action
+              </a>
+            </li>
+            <li>
+              <a className="dropdown-item" href="#">
+                Another action
+              </a>
+            </li>
+            <li>
+              <a className="dropdown-item" href="#">
+                Something else here
+              </a>
+            </li>
+          </ul>
         </div>
-
-    </div>
+        <Editor language={props.language} value={props.value} onChange={props.onChange} />
+      </div>
   );
 };
 
