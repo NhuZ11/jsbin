@@ -1,13 +1,21 @@
-import React from "react";
+import React , {useState} from "react";
 import { Link } from "react-router-dom";
 
 const TopSection = () => {
+  
+  const [showTop, setShowtop] = useState(true)
+
+
+  const showView = ()=>{
+    setShowtop(false)
+  }
+
   return (
     <div className="container-fluid pt-3 top-style">
-      <div className="row">
+      {showTop && <div className="row">
         <div className="col-md-2 d-flex flex-column justify-content-center ">
           <img src="" alt="bin" />
-          <button className="btn btn-primary py-1 px-2 mt-3 ">New bin</button>
+          <button className="btn btn-primary py-1 px-2 mt-3 " onClick={showView}>New bin</button>
         </div>
         <div className="col-md-2">
           <p className="fw-bold text-primary mb-1">
@@ -111,7 +119,7 @@ const TopSection = () => {
             you how to think"--Steve Jobs
           </p>
         </div>
-      </div>
+      </div>}
     </div>
   );
 };

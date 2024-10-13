@@ -7,6 +7,7 @@ import CssEditor from "./CssEditor";
 import JsEditor from "./JsEditor";
 
 const Home = () => {
+
   const [html, setHtml] = useState("");
   const [css, setCss] = useState("");
   const [js, setJs] = useState("");
