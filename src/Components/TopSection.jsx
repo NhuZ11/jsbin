@@ -1,14 +1,11 @@
-import React , {useState} from "react";
+import React , {useState, useContext} from "react";
 import { Link } from "react-router-dom";
+import { Context } from '../App';
 
 const TopSection = () => {
   
-  const [showTop, setShowtop] = useState(true)
-
-
-  const showView = ()=>{
-    setShowtop(false)
-  }
+  const { showTop, showView } = useContext(Context);
+  
 
   return (
     <div className="container-fluid pt-3 top-style">

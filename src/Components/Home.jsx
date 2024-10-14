@@ -8,6 +8,14 @@ import JsEditor from "./JsEditor";
 
 const Home = () => {
 
+
+
+  //state for topview toggle
+  const [showTop, setShowtop] = useState(true)
+  const showView = ()=>{
+    setShowtop(false)
+  }
+
   const [html, setHtml] = useState("");
   const [css, setCss] = useState("");
   const [js, setJs] = useState("");
@@ -48,7 +56,8 @@ const Home = () => {
 
   return (
     <>
-      <TopSection />
+    {showTop && <TopSection value={true} />}
+      
       <Navbar togglePanel={togglePanel} panels={panels} />
       <div className="pane-container">
         <div
