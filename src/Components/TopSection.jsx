@@ -11,8 +11,9 @@ const TopSection = () => {
     <div className="container-fluid pt-3 top-style">
       {showTop && <div className="row">
         <div className="col-md-2 d-flex flex-column justify-content-center ">
+          <button className="btn " onClick={showView}>x</button>
           <img src="" alt="bin" />
-          <button className="btn btn-primary py-1 px-2 mt-3 " onClick={showView}>New bin</button>
+          <button className="btn btn-primary py-1 px-2 mt-3 " onClick={()=>{window.location.reload()}}>Close</button>
         </div>
         <div className="col-md-2">
           <p className="fw-bold text-primary mb-1">

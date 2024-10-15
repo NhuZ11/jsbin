@@ -1,11 +1,16 @@
-import React from "react";
+import React, {useState, useContext} from "react";
+import { Context } from '../App';
 
 const Navbar = ({ togglePanel, panels }) => {
+  const { showTop, showView } = useContext(Context);
   return (
     <div className="container-fluid">
+      
       <div className="row border py-2">
+        
         {/* Start Section */}
         <div className="col d-flex justify-content-start align-items-center gap-3">
+        {showTop? <br/> :<button onClick={showView}>.</button>}
           <div className="dropdown">
             <button
               className="btn dropdown-toggle no-background"
