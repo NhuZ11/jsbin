@@ -5,6 +5,7 @@ import Editor from "./Editor";
 import HtmlEditor from "./htmlEditor";
 import CssEditor from "./CssEditor";
 import JsEditor from "./JsEditor";
+import ConsoleEditor from "./ConsoleEditor";
 
 const Home = () => {
 
@@ -78,10 +79,7 @@ const Home = () => {
             <JsEditor language="javascript" value={js} onChange={setJs} />
           )}
           {panels.console && (
-            <div className="box">
-              <h4>Console Output</h4>
-              <pre>{/* Console output goes here */}</pre>
-            </div>
+           <ConsoleEditor language="javascript" value={js} onChange={setJs}/>
           )}
           {panels.output && (
             <div className="box" style={{fontSize: 14}}>
