@@ -4,7 +4,7 @@ import 'codemirror/mode/javascript/javascript';
 
 const JsEditor = (props) => {
   return (
-    <div className="box">
+    <div className="box js-editor">
       <div className="dropdown">
         <button
           className="btn dropdown-toggle no-background text-primary"

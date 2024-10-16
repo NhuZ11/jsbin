@@ -4,7 +4,7 @@ import { Context } from '../App';
 const Navbar = ({ togglePanel, panels }) => {
   const { showTop, showView } = useContext(Context);
   return (
-    <div className="container-fluid">
+    <div className="container-fluid nav-background">
       
       <div className="row border py-2">
         
