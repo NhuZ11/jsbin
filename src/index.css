@@ -70,8 +70,7 @@ button:hover {
 .box {
   flex-grow: 1;
   height: 100%;
-  border-left: 1px solid #ddd;
-
+  border-left: 4px solid #ddd;
   overflow: auto;
   box-sizing: border-box;
 }

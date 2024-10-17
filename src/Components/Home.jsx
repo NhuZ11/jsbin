@@ -1,7 +1,8 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useContext } from "react";
 import TopSection from "./TopSection";
 import Navbar from "./Navbar";
 import Editor from "./Editor";
+import { Context } from '../App';
 import HtmlEditor from "./htmlEditor";
 import CssEditor from "./CssEditor";
 import JsEditor from "./JsEditor";
@@ -9,7 +10,7 @@ import ConsoleEditor from "./ConsoleEditor";
 
 const Home = () => {
 
-
+ const {runCode} = useContext(Context); //for run as js
 
   //state for topview toggle
   const [showTop, setShowtop] = useState(true)
@@ -85,8 +86,8 @@ const Home = () => {
             <div className="box" style={{fontSize: 14}}>
               <div className="d-flex">
                 <p className="p-2">Output</p>
-                <p className="btn p-0 ms-4  border">Run with JS</p>
-                <p className="ms-2">
+                <p className="border border-2 ms-5 mt-2 px-1" onClick={runCode}>Run with JS</p>
+                <p className="ms-2 mt-2">
                   Auto run-JS <input type="checkbox" />
                 </p>
               </div>
