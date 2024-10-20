@@ -1,5 +1,6 @@
 import React, {useState, useContext} from "react";
 import { Context } from '../App';
+import { Link } from "react-router-dom";
 
 const Navbar = ({ togglePanel, panels }) => {
   const { showTop, showView } = useContext(Context);
@@ -66,7 +67,7 @@ const Navbar = ({ togglePanel, panels }) => {
 
         {/* End Section */}
         <div className="col d-flex justify-content-end align-items-center gap-3">
-          <p className="mb-0 button-back ">Login or Register</p>
+          <Link className="mb-0 button-back no-underline" to='/register'>Login or Register</Link>
           <p className="mb-0">Blog</p>
           <p className="mb-0">Help</p>
         </div>

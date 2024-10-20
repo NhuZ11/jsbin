@@ -1,5 +1,6 @@
 .no-underline{
   text-decoration: none;
+  color: black;
   
 }
 
@@ -63,7 +64,7 @@ button:hover {
 
 .editor-pane {
   display: flex;
-  gap: 2px; /* Spacing between panels */
+  gap: 4px; /* Spacing between panels */
   width: 100%;
 }
 
@@ -73,21 +74,27 @@ button:hover {
   border-left: 4px solid #ddd;
   overflow: auto;
   box-sizing: border-box;
+  width: 500px;
 }
 
-.preview-pane {
-  flex: 1;
-  border-left: 1px solid #ccc;
+.inner-box{
+  height: 100%;
 }
 
 .CodeMirror {
   padding-top: 0;
   margin-top: 0;
-}
-.box{
-  width: 600px;
+  height: 60vh;
+  
 }
 
+.iframe{
+  height: 50vh;
+}
+
+.console-output{
+  height: 50vh;
+}
 
 
 

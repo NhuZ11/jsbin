@@ -83,7 +83,7 @@ const Home = () => {
            <ConsoleEditor language="javascript" value={js} onChange={setJs}/>
           )}
           {panels.output && (
-            <div className="box" style={{fontSize: 14}}>
+            <div className="box" style={{fontSize: 14,}}>
               <div className="d-flex">
                 <p className="p-2">Output</p>
                 <p className="border border-2 ms-5 mt-2 px-1" onClick={runCode}>Run with JS</p>
@@ -92,12 +92,13 @@ const Home = () => {
                 </p>
               </div>
               <iframe
+                className="iframe"
                 srcDoc={srcDoc}
                 title="output"
                 sandbox="allow-scripts"
-                frameBorder="0"
                 width="100%"
                 height="100%"
+                allowFullScreen="true"
               />
             </div>
           )}

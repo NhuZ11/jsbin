@@ -33,7 +33,9 @@ const HtmlEditor = (props) => {
             </li>
           </ul>
         </div>
+        <div className="inner-box">
         <Editor language={props.language} value={props.value} onChange={props.onChange} />
+        </div>
       </div>
   );
 };

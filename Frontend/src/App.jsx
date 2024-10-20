@@ -5,6 +5,8 @@ import Home from './Components/Home'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import Test from './Components/Test';
+import Register from './Components/LoginComponent/Register';
+import Login from './Components/LoginComponent/Login';
 
 //for context
 export const Context = createContext();
@@ -50,6 +52,8 @@ function App() {
        <Routes>
          <Route path='/' element={<Home />} /> 
          <Route path='/test' element={<Test />} /> 
+         <Route path='/register' element={<Register />} /> 
+         <Route path='/login' element={<Login />} /> 
        </Routes>
      </Router>
     </Context.Provider>
