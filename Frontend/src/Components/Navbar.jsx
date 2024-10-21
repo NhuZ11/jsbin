@@ -1,6 +1,7 @@
 import React, {useState, useContext} from "react";
 import { Context } from '../App';
 import { Link } from "react-router-dom";
+import Icon from "../assets/jsbinimg.png";
 
 const Navbar = ({ togglePanel, panels }) => {
   const { showTop, showView } = useContext(Context);
@@ -10,8 +11,8 @@ const Navbar = ({ togglePanel, panels }) => {
       <div className="row border py-2">
         
         {/* Start Section */}
-        <div className="col d-flex justify-content-start align-items-center gap-3">
-        {showTop? <br/> :<button onClick={showView}>.</button>}
+        <div className="col  d-flex justify-content-start align-items-center gap-3">
+        {showTop? <br/> :<p className="" onClick={showView}><img src={Icon} className="nav-icon" alt="" /></p>}
           <div className="dropdown">
             <button
               className="btn dropdown-toggle no-background"
@@ -46,21 +47,26 @@ const Navbar = ({ togglePanel, panels }) => {
 
         {/* Center Section */}
         <div className="col d-flex justify-content-center align-items-center gap-3">
-          <div className="btn-group border" role="group" aria-label="Basic example">
+          <div className="btn-group border border-3" role="group" aria-label="Basic example">
             <button type="button" className="btn" onClick={() => togglePanel('html')}>
-              {panels.html ? 'Hide HTML' : 'Show HTML'}
+              {/* {panels.html ? 'Hide HTML' : 'Show HTML'} */}
+              HTML
             </button>
             <button type="button" className="btn" onClick={() => togglePanel('css')}>
-              {panels.css ? 'Hide CSS' : 'Show CSS'}
+              {/* {panels.css ? 'Hide CSS' : 'Show CSS'} */}
+              CSS
             </button>
             <button type="button" className="btn" onClick={() => togglePanel('js')}>
-              {panels.js ? 'Hide JS' : 'Show JS'}
+              {/* {panels.js ? 'Hide JS' : 'Show JS'} */}
+              JavaScript
             </button>
             <button type="button" className="btn" onClick={() => togglePanel('console')}>
-              {panels.console ? 'Hide Console' : 'Show Console'}
+              {/* {panels.console ? 'Hide Console' : 'Show Console'} */}
+              Console
             </button>
             <button type="button" className="btn" onClick={() => togglePanel('output')}>
-              {panels.output ? 'Hide Output' : 'Show Output'}
+              {/* {panels.output ? 'Hide Output' : 'Show Output'} */}
+              Output
             </button>
           </div>
         </div>

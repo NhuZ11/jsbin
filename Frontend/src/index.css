@@ -35,6 +35,21 @@
   cursor: pointer;
 }
 
+/* for image icon */
+.icon-image{
+  height: 100px;
+  width: 100px;
+
+}
+
+.nav-icon{
+  height: 35px;
+  width: 35px;
+  padding: 0px;
+  margin-bottom: -20px;
+  margin-top: -10px;
+}
+
 
 
 /* for home */
