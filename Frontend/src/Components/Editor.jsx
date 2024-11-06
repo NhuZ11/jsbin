@@ -10,10 +10,10 @@ import 'codemirror/theme/material.css';
 const Editor = ({ language, value, onChange }) => {
   return (
     <CodeMirror
-      value={value}
+      value={value.trimStart()}
       options={{
         mode: language,
-        theme: 'material',
+        theme: 'default',
         lineNumbers: true,
       }}
       onBeforeChange={(editor, data, value) => {

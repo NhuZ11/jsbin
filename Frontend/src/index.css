@@ -1,5 +1,6 @@
 .no-underline{
   text-decoration: none;
+  color: black;
   
 }
 
@@ -34,6 +35,21 @@
   cursor: pointer;
 }
 
+/* for image icon */
+.icon-image{
+  height: 100px;
+  width: 100px;
+
+}
+
+.nav-icon{
+  height: 35px;
+  width: 35px;
+  padding: 0px;
+  margin-bottom: -20px;
+  margin-top: -10px;
+}
+
 
 
 /* for home */
@@ -58,27 +74,53 @@ button:hover {
 }
 
 .pane-container {
-  display: flex;
-  width: 800px; /* Set a fixed width */
-  
- 
+  padding: 10px;
 }
 
 .editor-pane {
- 
   display: flex;
-  
-  gap: 1px;
+  gap: 4px; /* Spacing between panels */
+  width: 100%;
 }
 
-.preview-pane {
-  flex: 1;
-  border-left: 1px solid #ccc;
+.box {
+  flex-grow: 1;
+  height: 100%;
+  border-left: 4px solid #ddd;
+  overflow: auto;
+  box-sizing: border-box;
+  width: 500px;
+}
+
+.inner-box{
+  height: 100%;
 }
 
 .CodeMirror {
-  height: 100%;
+  padding-top: 0;
+  margin-top: 0;
+  height: 60vh;
+  
 }
-.box{
-  width: 600px;
+
+.iframe{
+  height: 50vh;
+}
+
+.console-output{
+  height: 50vh;
+}
+
+
+
+
+/* for nav bar */
+
+.nav-background{
+  background-color: #EDEDED ;
+}
+
+.blog-container{
+  margin-left: 250px;
+  margin-right: 200px;
 }
