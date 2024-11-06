@@ -4,7 +4,7 @@ import { Context } from "../App";
 import Icon from "../assets/jsbinimg.png";
 
 const TopSection = () => {
-  const { showTop, showView } = useContext(Context);
+  const { showTop, showView  } = useContext(Context);
 
   return (
     <div className="container-fluid pt-3 top-style">
@@ -20,7 +20,7 @@ const TopSection = () => {
             </button>
             <img src={Icon} className="icon-image ms-5" alt="bin" />
             <button
-              className="btn border border-primary pb-2 py-1 mt-3 rounded-0 shadow-sm mb-2"
+              className="btn border border-primary pb-2 py-1 mt-3 rounded-0 shadow-sm mb-2 text-primary"
               onClick={() => {
                 window.location.reload();
               }}
@@ -30,7 +30,7 @@ const TopSection = () => {
           </div>
           <div className="col-md-2">
             <p className="fw-bold text-primary mb-1">
-              <Link className=" no-underline" to="/binfeatures">
+              <Link className=" no-underline" to="/features">
                 JS Bin features
               </Link>
             </p>
@@ -78,7 +78,7 @@ const TopSection = () => {
           </div>
           <div className="col-md-2">
             <p className="fw-bold text-primary mb-1">
-              <Link className="no-underline" to="/binfeatures">
+              <Link className="no-underline" to="/blog">
                 Blog
               </Link>
             </p>

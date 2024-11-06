@@ -18,17 +18,22 @@ const HtmlEditor = (props) => {
           <ul className="dropdown-menu" aria-labelledby="dropdownMenuButton">
             <li>
               <a className="dropdown-item" href="#">
-                Action
+                HTML
               </a>
             </li>
             <li>
               <a className="dropdown-item" href="#">
-                Another action
+                Markdown
               </a>
             </li>
             <li>
               <a className="dropdown-item" href="#">
-                Something else here
+                Jade
+              </a>
+            </li>
+            <li>
+              <a className="dropdown-item" href="#">
+                Convert To HTML
               </a>
             </li>
           </ul>

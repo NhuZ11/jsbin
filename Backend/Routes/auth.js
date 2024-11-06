@@ -5,7 +5,7 @@ const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
 require('dotenv').config();
 const { body, validationResult } = require('express-validator');
-
+const authenticateUser = require("../Middleware/authenticateUser");
 
 const JWT_SECRET = process.env.SECRET;
 
@@ -92,5 +92,17 @@ router.post("/login", [
         }
     }
   )
+
+
+  router.get("/getuser", authenticateUser, async (req, res) => {
+    try {
+      const users = await User.findById(req.user.id);
+      res.json(users);
+    } catch (err) {
+      console.log(err);
+      res.status(500).send("Internal server error")
+    }
+  });
+
 
 module.exports = router;

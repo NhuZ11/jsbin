@@ -18,17 +18,42 @@ const JsEditor = (props) => {
         <ul className="dropdown-menu" aria-labelledby="dropdownMenuButton">
           <li>
             <a className="dropdown-item" href="#">
-              Action
+              JavaScript
             </a>
           </li>
           <li>
             <a className="dropdown-item" href="#">
-              Another action
+              ES6/Babel
             </a>
           </li>
           <li>
             <a className="dropdown-item" href="#">
-              Something else here
+              JSX
+            </a>
+          </li>
+          <li>
+            <a className="dropdown-item" href="#">
+              CoffeeScript
+            </a>
+          </li>
+          <li>
+            <a className="dropdown-item" href="#">
+              Traceur
+            </a>
+          </li>
+          <li>
+            <a className="dropdown-item" href="#">
+              TypeScript
+            </a>
+          </li>
+          <li>
+            <a className="dropdown-item" href="#">
+              Processing
+            </a>
+          </li>
+          <li>
+            <a className="dropdown-item" href="#">
+              LiveScript
             </a>
           </li>
         </ul>

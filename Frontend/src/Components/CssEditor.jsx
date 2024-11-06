@@ -18,17 +18,27 @@ const CssEditor = (props) => {
         <ul className="dropdown-menu" aria-labelledby="dropdownMenuButton">
           <li>
             <a className="dropdown-item" href="#">
-              Action
+              CSS
             </a>
           </li>
           <li>
             <a className="dropdown-item" href="#">
-              Another action
+              Less
             </a>
           </li>
           <li>
             <a className="dropdown-item" href="#">
-              Something else here
+              Myth
+            </a>
+          </li>
+          <li>
+            <a className="dropdown-item" href="#">
+              Stylus
+            </a>
+          </li>
+          <li>
+            <a className="dropdown-item" href="#">
+              Convert To CSS
             </a>
           </li>
         </ul>
